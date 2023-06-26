@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Asap&family=Black+Han+Sans&family=Faster+One&family=Inter&family=Lexend+Deca:wght@600&family=Manrope&family=Nosifer&family=Orienta&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+#genel{
+    background-color: #dbe5fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.genel h2{
+  font-size: 20px;
+  color: #fff;
+}
+
+h2 span{
+  font-size: 20px;
+  color: #b36cd2;
+  font-weight: bold;
+}
+
+.genel{
+    width: 850px;
+    height: auto;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.genel .ust{
+    background-color: #333;
+    width: 100%;
+    height: 80px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.genel ul{
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+ul li{
+  width: 50px;
+  height: 200px;
+  background-color: #7f8fb9;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+ul .white.active{
+  background-color: #e6e7eb;
+}
+
+ul .black.active{
+  background-color: #333;
+}
+
+ul li.black{
+  background-color: #000000;
+  width: 40px;
+  height: 120px;
+  color: #fff;
+  z-index: 2;
+  border-radius: 0 0 5px 5px;
+  margin: 0 -22px 0 -22px;
+}
+
+ul li.white{
+  width: 90px;
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+ul li span{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 900px) {
+  html,body{
+      overflow-x: hidden;
+  }
+  #genel .genel{
+      display: flex;
+      flex-direction: column;
+  }
+
+  #genel .genel ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    justify-content: center;
+  }
+  #genel .genel ul li{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+  }
+  #genel .genel ul li span{
+    text-align: center;
+    bottom: 10px;
+}
+}
